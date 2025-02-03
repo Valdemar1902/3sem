@@ -2,13 +2,35 @@
 <project version="4">
   <component name="SolutionCommentsState">
     <snapshots>
-      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="2" endOffset="63" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="2" startOffset="36" endOffset="99" displayKind="Render" />
       <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="2" startOffset="337" endOffset="375" displayKind="Render" />
-      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="3" endOffset="63" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="3" startOffset="36" endOffset="99" displayKind="Render" />
       <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="3" startOffset="337" endOffset="375" displayKind="Render" />
-      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="1" endOffset="63" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="1" startOffset="36" endOffset="99" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="1" startOffset="100" endOffset="538" />
       <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="1" startOffset="337" endOffset="375" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="1" startOffset="692" endOffset="694" />
       <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="1" startOffset="385" endOffset="387" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="1" startOffset="440" endOffset="535" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="1" startOffset="520" endOffset="534" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="1" startOffset="869" endOffset="883" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="1" startOffset="1117" endOffset="1120" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="1" startOffset="1080" endOffset="1094" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="1" startOffset="1375" endOffset="1377" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="1" startOffset="1358" endOffset="1371" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="1" startOffset="1717" endOffset="1719" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="1" startOffset="1842" endOffset="1884" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="1" startOffset="720" endOffset="745" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Program.cs" tabOrder="1" startOffset="912" endOffset="951" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Opgaver/Opgave4.cs" tabOrder="1" startOffset="60" endOffset="74" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Opgaver/Opgave4.cs" tabOrder="1" startOffset="409" endOffset="423" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Opgaver/Opgave4.cs" tabOrder="1" startOffset="620" endOffset="634" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Opgaver/Opgave4.cs" tabOrder="1" startOffset="898" endOffset="911" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Opgaver/M2/Opgave1.cs" tabOrder="1" startOffset="169" endOffset="218" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Opgaver/M2/Opgave1.cs" tabOrder="1" startOffset="349" endOffset="390" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Opgaver/M2/Opgave1.cs" tabOrder="1" startOffset="577" endOffset="602" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Opgaver/Opgave5.cs" tabOrder="1" startOffset="222" endOffset="247" displayKind="Render" />
+      <stateSnapshot moniker="$PROJECT_DIR$/Opgaver/Opgave5.cs" tabOrder="1" startOffset="414" endOffset="453" displayKind="Render" />
     </snapshots>
   </component>
 </project>
