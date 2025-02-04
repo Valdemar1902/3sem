@@ -1,35 +1,29 @@
-namespace mit_console_projekt.Opgaver.M2;
-using static System.Linq.Enumerable;
-using static System.Console;
-
-using mit_console_projekt.Data;
-
-public class Opgave1
+namespace mit_console_projekt.Opgaver
 {
-    // Udregner den samlede alder for alle mennesker.
-    int totalAge = 0;
-        for (int i = 0; i < people.Length; i++)
+    using static System.Console;
+    using mit_console_projekt.Data;
+    using System.Linq;
+
+    public class Opgave1
     {
-        totalAge += people[i].Age;
-    }
         
-    // Tæller hvor mange der hedder "Nielsen"
-    int countNielsen = 0;
-        for (int i = 0; i < people.Length; i++)
-    {
-        if (people[i].Name.Contains("Nielsen"))
+
+        public static void linq()
         {
-            countNielsen++;
+            // Hent data
+            Data.Person[] people = Data.PeopleData.GetPeople();
+
+            // Udregner den samlede alder for alle mennesker.
+            var totalAge = people.Sum(p => p.Age);
+            WriteLine($"Total Age: {totalAge}");
+
+            // Tæller hvor mange der hedder "Nielsen"
+            int countNielsen = people.Count(p => p.Name.Contains("Nielsen"));
+            WriteLine($"Count of Nielsen: {countNielsen}");
+
+            // Find den ældste person
+            Data.Person oldestPerson = people.OrderByDescending(p => p.Age).FirstOrDefault();
+            WriteLine($"Oldest Person: {oldestPerson?.Name}, Age: {oldestPerson?.Age}");
         }
     }
-    // Find den ældste person
-    Person oldestPerson = null;
-        for (int i = 0; i < people.Length; i++)
-    {
-        if (oldestPerson == null || people[i].Age > oldestPerson.Age)
-        {
-            oldestPerson = people[i];
-        }
-    }
-    
 }
