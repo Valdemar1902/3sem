@@ -1,6 +1,6 @@
 namespace mit_console_projekt.Opgaver;
 
-class Opgave4
+class m1o4
 {
     // delopgave 1
     public static int sfd(int a, int b)

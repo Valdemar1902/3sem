@@ -1,10 +1,9 @@
 namespace mit_console_projekt.Opgaver
 {
-    using static System.Console;
-    using mit_console_projekt.Data;
+    using static Console;
     using System.Linq;
 
-    public class Opgave1
+    public class m2o1
     {
         
 

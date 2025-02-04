@@ -1,7 +1,4 @@
 ﻿using mit_console_projekt.Opgaver;
-using static System.Linq.Enumerable;
-using static System.Console;
-using mit_console_projekt.Data;
 
 // See https://aka.ms/new-console-template for more information
 /* Console.WriteLine(Opgave3.Faculty(5)); // Output skal være '120'.
@@ -14,6 +11,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Opgave2.arrayUdenLandekode();
+        m2o4.SortByAge();
     }
 }

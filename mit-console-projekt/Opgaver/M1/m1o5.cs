@@ -1,6 +1,6 @@
 namespace mit_console_projekt.Opgaver;
 
-class Opgave5 {
+class m1o5 {
     public static void ScanDir(string path, string prefix) {
         DirectoryInfo dir = new DirectoryInfo(path);
         FileInfo[] files = dir.GetFiles();

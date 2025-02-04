@@ -1,6 +1,6 @@
 namespace mit_console_projekt.Opgaver;
 
-class Opgave3
+class m1o3
 {
     public static int Faculty(int n)
     {

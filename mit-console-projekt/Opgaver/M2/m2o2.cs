@@ -1,11 +1,11 @@
 namespace mit_console_projekt.Opgaver;
-using static System.Console;
-using mit_console_projekt.Data;
+using static Console;
+using Data;
 using System.Linq;
 
-public class Opgave2
+public class m2o2
 {
-    public static void findNummer()
+    public static void FindNummer()
     {
         Data.Person[] people = Data.PeopleData.GetPeople();
         
@@ -14,7 +14,7 @@ public class Opgave2
             .ToList()
             .ForEach(s => WriteLine(s.Name));
     }
-    public static void findAlder()
+    public static void FindAlder()
     {
         Data.Person[] people = Data.PeopleData.GetPeople();
         
@@ -23,13 +23,11 @@ public class Opgave2
             .ToList()
             .ForEach(s => WriteLine(s.Name));
     }
-    public static void arrayUdenLandekode()
+    public static void ArrayUdenLandekode()
     {
         Data.Person[] people = Data.PeopleData.GetPeople();
         List<Data.Person> newPeople = new List<Person>();
         
-        
-
         foreach (var person in people)
         {
             if (person.Phone.StartsWith("+45"))
@@ -39,9 +37,22 @@ public class Opgave2
 
             newPeople.Add(person);
         }
+        
         newPeople
         .Where(person => person.Age > 30)
         .ToList()
         .ForEach(s => WriteLine($"{s.Name} {s.Phone}"));
     }
+    
+    public static void GenererStreng()
+    {
+        Data.Person[] people = Data.PeopleData.GetPeople();
+        
+        people
+            .Where(person => person.Age < 30)
+            .ToList()
+            .ForEach(s => WriteLine($"{s.Name}" + ", " + $"{s.Phone}"));
+    }
+    
 }
+
