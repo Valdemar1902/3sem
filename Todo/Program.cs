@@ -1,25 +1,34 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// services
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        builder => builder.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+});
+
 // Add services to the container.
 var app = builder.Build();
+
+// use cors
+app.UseCors("AllowALlOrigins");
+
+// Configure the HTTP request pipeline.
+// app.UseHttpsRedirection(); 
 
 // list for tasks with names and booleans
 List<Task> tasks = new List<Task>();
 
-// Configure the HTTP request pipeline.
-app.UseHttpsRedirection();
-
-// GETs
-app.MapGet("/", ()=> tasks);
-
 //get alle tasks
-app.MapGet("/tasks", ()=> tasks);
+app.MapGet("/tasks/", ()=> tasks);
 
 // GET efter id
 app.MapGet("/tasks/{id}", (int id) => tasks[id]);
 
 // POST data i raw med JSON
-app.MapPost("/tasks/add", (Task task) =>
+app.MapPost("/tasks/", (Task task) =>
 {
     tasks.Add(task);
     return tasks;
@@ -40,4 +49,4 @@ app.MapDelete("/tasks/{id}", (int id) =>
 });
 
 app.Run();
-public record Task(string Name, bool IsComplete);
+public record Task(long Id, string Text, bool Done);
