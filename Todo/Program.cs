@@ -1,22 +1,17 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// services
+var AllowCors = "_AllowCors";
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAllOrigins",
-        builder => builder.AllowAnyOrigin()
-            .AllowAnyMethod()
-            .AllowAnyHeader());
+    options.AddPolicy(name: AllowCors, builder => {
+        builder.AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
 });
 
-// Add services to the container.
 var app = builder.Build();
-
-// use cors
-app.UseCors("AllowALlOrigins");
-
-// Configure the HTTP request pipeline.
-// app.UseHttpsRedirection(); 
+app.UseCors(AllowCors);
 
 // list for tasks with names and booleans
 List<Task> tasks = new List<Task>();
